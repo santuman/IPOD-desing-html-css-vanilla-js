@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  background: #ecf0f3;
+}
+.ipod {
+  width: 330px;
+  height: 500px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  border-radius: 40px;
+  box-shadow: 17px 17px 29px #cbced1, -17px -17px 29px #ffffff;
+}
+
+.screen {
+  width: 260px;
+  height: 200px;
+  background: #2e2e2e;
+  margin-top: -30px;
+  border-radius: 56px;
+  background: #2e2e2e;
+  /* background-image: url("./images/ukulele.jpg"); */
+  box-shadow: inset 5px 5px 10px #1e1e1e, inset -5px -5px 10px #3e3e3e;
+
+  box-shadow: 
+    /* logo shadow */ 0px 0px 2px #5f5f5f,
+    /* offset */ 0px 0px 0px 5px #ecf0f3, /*bottom right */ 8px 8px 15px #a7aaaf,
+    /* top left */ -8px -8px 15px #ffffff;
+}
+
+.navigator {
+  width: 260px;
+  height: 230px;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.keys {
+  width: 210px;
+  height: 210px;
+  background: white;
+  margin: 10px auto;
+  overflow: hidden;
+  /*radius*/
+
+  /*shadow*/
+  /*  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);*/
+
+  border-radius: 50%;
+  background: linear-gradient(145deg, #d4d8db, #fdffff);
+  box-shadow: 6px 6px 12px #b6b9bb, -6px -6px 12px #ffffff;
+}
+
+.keys:hover {
+  -webkit-box-shadow: 0px 0px 22px 3px rgba(0, 166, 255, 0.32);
+  -moz-box-shadow: 0px 0px 22px 3px rgba(0, 166, 255, 0.32);
+  box-shadow: 0px 0px 22px 3px rgba(0, 166, 255, 0.32);
+}
+
+.menu-btn {
+  display: block;
+  position: absolute;
+  top: 32px;
+  left: 107px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 16px;
+  color: gray;
+}
+
+.menu-btn:hover {
+  color: #00a6ff;
+  /* duration / speed */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.fwd {
+  width: 22px;
+  position: absolute;
+  top: 108px;
+  left: 195px;
+}
+
+img.fwd {
+  /*filter*/
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  /* duration / speed */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+img.fwd:hover {
+  /*filter*/
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  /* duration / speed */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.bkd {
+  width: 22px;
+  position: absolute;
+  top: 108px;
+  left: 41px;
+}
+
+img.bkd {
+  /*filter*/
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  /* duration / speed */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+img.bkd:hover {
+  /*filter*/
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+}
+
+.play-pause {
+  width: 28px;
+  position: absolute;
+  top: 182px;
+  left: 120px;
+}
+
+img.play-pause {
+  /*filter*/
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+}
+
+img.play-pause:hover {
+  /*filter*/
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+  background: #f0f0f0;
+  margin: 54px auto;
+  border-radius: 100%;
+  /*shadow*/
+  -webkit-box-shadow: inset 0px -2px 14px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px -2px 14px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px -2px 14px -1px rgba(0, 0, 0, 0.3);
+}
